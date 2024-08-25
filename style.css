@@ -1,0 +1,392 @@
+
+
+:root {
+    --secondary-color: #f34418;
+    --font-size-large: 20px;
+    --primary-btn-color:#f34418;
+}
+
+
+body{
+    margin: 0;
+}
+
+.dflex{
+    display: flex;
+}
+.primary{
+    margin:15vh 8vw;
+}
+
+button{
+    border:none;
+    padding: 10px 15px;
+    background-color: var(--primary-btn-color);
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+nav>div{
+    align-items: center;
+    justify-content: center;
+}
+
+nav>div>h1>span{
+    color: var(--secondary-color);
+    margin-right: 5%;
+}
+
+nav>div>img{
+    height:50%;
+    width: 30%;
+    margin-right: 5%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    font-weight: 800px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover{
+    color:orange;
+    cursor:pointer;
+    font-weight: 1000;
+}
+
+.small-nav{
+    display:none;
+}
+
+.banner{
+    margin-top: 3%;
+    width: 100%;
+    height:300px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)),url('/images/Group 13 (1) (1).png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner h2{
+    font-size: 50px;
+    font-weight: 1000;
+    margin:1% auto;
+    text-align: center;
+}
+
+.banner p{
+    text-align: center;
+    width:60%;
+}
+
+.banner form{
+    padding:min(2%,10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border:none;
+    gap:20px;
+}
+
+.banner form input,.banner form button,.banner form select{
+    border-radius: 10px;
+    background-color: white;
+    border:none;
+    padding:10px;
+}
+
+.banner form button{
+    color:white;
+    background-color: var(--primary-btn-color);
+}
+
+.banner form button i{
+    margin:0 10px;
+}
+
+.popular,.place{
+    gap:5vw;
+}
+
+.popular>img{
+    width:70%;
+    height: 70vh;
+}
+
+.popular>article>ul>li{
+    margin-bottom: 2vw;
+}
+
+
+
+.destination>h2,.choose>h2,.deals>h2{
+    text-align: center;
+}
+
+.destination>p,.choose>p,.deals>p{
+    width: 70%;
+    margin:0 auto 5vh;
+}
+
+
+.destination>article{
+    display: grid;
+    grid-template-areas:
+        "maldives maldives maldives maldives  indonesia indonesia indonesia indonesia"
+        "srilanka srilanka north-america north-america north-america north-america north-america kashmir"
+        "bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban";
+    gap:1vw;
+}
+
+.destination>article>div{
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 28vh;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destination>div>h2{
+    text-align: center;
+    align-items: center;
+}
+
+
+.maldives{
+    background-image: url('/images/Rectangle 5.png');
+    grid-area:maldives;
+}
+
+
+.indonesia{
+    background-image: url('/images/Rectangle 8.png');
+    grid-area:indonesia;
+}
+
+.srilanka{
+    background-image: url('/images/Rectangle 6.png');
+    grid-area:srilanka;
+}
+
+.north-america{
+    background-image: url('/images/Rectangle 7.png');
+    grid-area:north-america;
+}
+
+.kashmir{
+    background-image: url('/images/Rectangle 9.png');
+    grid-area:kashmir;
+}
+
+.bangladesh{
+    background-image: url('/images/Rectangle 11.png');
+    grid-area:bangladesh;
+}
+
+.bandarban{
+    background-image: url('/images/Rectangle 10.png');
+    grid-area:bandarban;
+}
+
+.choose>article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap:1vw;
+}
+
+.choose>article>div{
+    width: 30vw;
+    background-color: rgb(245, 239, 241);
+    padding:min(20px,2vw);
+}
+
+.choose>article>div:nth-child(2n){
+    background-color: aliceblue;
+}
+
+
+.deals>article>section{
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 40vh;
+    margin: 3vh 0;
+}
+
+
+.deals>article>section:nth-child(n){
+    background-image: url('/images/Group 39.png');
+    padding:4% 4% 4% 60%;
+}
+
+.deals>article>section:nth-child(2n){
+    background-image: url('/images/Group 40.png');
+    padding:4% 60% 4% 4%;
+}
+
+
+.card{
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 10px;
+    padding: 2vw;
+}
+
+.card>p{
+    font-size: max(1vw,8px);
+}
+
+.card>p>i{
+    color:var(--secondary-color);
+    margin-right: 0.5vw;
+    margin-left: 1vw;
+}
+
+.card>p>i:nth-child(1){
+    margin-left: 0;
+}
+
+.card>h4{
+    font-size: 20px;
+    font-weight: 900;
+    margin:10px 0;
+}
+
+.card>.price{
+    color:var(--secondary-color);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+.packages{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.place h2{
+    width: 60%;
+}
+
+.place p{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.place li{
+    font-size: 13px;
+    margin-bottom: 1vw;
+    font-weight: 700;
+}
+
+
+.place>div{
+    width:100%;
+}
+
+.place>div>video{
+    border-radius: 10px;
+    width: 100%;
+    height: 50vh;
+}
+
+.place>div>h3{
+    margin:0;
+    padding:0;
+    font-size: 3vh;
+    text-align: center;
+    color:white;
+    width:50%;
+    position: relative;
+    bottom:28vh;
+    left:10vw;
+}
+
+
+
+
+@media  screen and (max-width: 600px) {
+    .small-nav{
+        display: block;
+    }
+
+    .large-nav{
+        display:none;
+    }
+
+    .banner{
+        padding: 5%;
+        height: auto;
+    }
+
+    .banner h2{
+        font-size: 30px;
+        font-weight: 800;
+        margin:1% 0;
+    }
+
+    .banner form,.popular,.place{
+        flex-direction: column;
+    }
+
+    .popular>img{
+        width:100%;
+        height: 70vh;
+    }
+
+
+    .destination>article{
+        grid-template-areas:
+            "maldives"
+            "indonesia"
+            "srilanka"
+            "north-america"
+            "kashmir"
+            "bangladesh"
+            "bandarban";
+        gap:1vw;
+    }
+
+    .choose>article{
+        flex-direction: column;
+    }
+
+    .choose>article>div{
+        width: 100%;
+    }
+
+    .deals>article>section{
+        height: 30vh;
+    }
+
+    .deals>article>section:nth-child(n),.deals>article>section:nth-child(2n){
+        padding:40% 4% 4% 4%;
+    }
+
+    .place>div>h3{
+        width:70%;
+        bottom:30vh;
+        left:12vw;
+    }
+
+}
