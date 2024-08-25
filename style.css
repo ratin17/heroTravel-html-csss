@@ -144,6 +144,7 @@ nav ul li:hover{
 .destination>p,.choose>p,.deals>p{
     width: 70%;
     margin:0 auto 5vh;
+    text-align: center;
 }
 
 
@@ -217,6 +218,9 @@ nav ul li:hover{
     gap:1vw;
 }
 
+
+
+
 .choose>article>div{
     width: 30vw;
     background-color: rgb(245, 239, 241);
@@ -226,6 +230,7 @@ nav ul li:hover{
 .choose>article>div:nth-child(2n){
     background-color: aliceblue;
 }
+
 
 .choose img{
     height: 60px;
@@ -298,14 +303,14 @@ nav ul li:hover{
 }
 
 .place p{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .place li{
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 1vw;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
