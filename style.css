@@ -28,11 +28,15 @@ button{
     font-weight: 600;
 }
 
+.custom-mar{
+    margin:2vh 8vw 15vh 8vw;
+}
+
 nav{
     justify-content: space-between;
 }
 
-nav>div{
+nav>div,footer{
     align-items: center;
     justify-content: center;
 }
@@ -322,6 +326,169 @@ nav ul li:hover{
     left:10vw;
 }
 
+.news{
+    display: flex;
+    gap:2vw;
+    
+}
+
+.news article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:60vh;
+    border-radius: 10px;
+}
+
+
+.news article:nth-child(1){
+    padding: 0 2vw;
+    width:calc(35% - (1vw + 4vw));
+    border: 2px solid orange;
+}
+
+.news article:nth-child(2){
+    width:calc(65% - 1vw);
+}
+
+.news article img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.news h5{
+    font-size: 16px;
+    margin: 2vw 0 1vw;
+    font-weight: 700;
+}
+
+.news p{
+    font-weight: 100;
+    width:100%;
+    /* border:1px solid; */
+}
+
+.news article hr {
+    width: calc(100%);
+}
+
+
+.news article form{
+    margin-top: auto;
+    margin-bottom: 3vh;
+}
+
+.news article input{
+    border:none;
+    border-radius: 5px;
+    width:calc(100% - 20px);
+    background-color: rgb(243, 247, 250);
+    padding: 10px;
+    margin-bottom: 1vw;
+}
+
+.news article button{
+    padding: 10px;
+    width:calc(100%);
+}
+
+.news>article>div{
+    position: relative;
+    padding: 10px;
+    background-color: var(--primary-btn-color);
+    color: white;
+    border-radius: 8px;
+    width:calc(50% - 20px);
+    text-align: center;
+
+    transform: translateX(110%) translateY(-105%) rotate(-27deg) ;
+    transform-origin: bottom left;
+    
+}
+
+.news>article>div>p{
+    font-size: 15px;
+    margin: 0 0 4px 0;
+}
+
+.news>article>div>h4{
+    font-size: 20px;
+    margin: 0 0 4px 0;
+}
+
+footer{
+    text-align: center;
+    flex-direction: column;
+    background-color:aliceblue;
+    padding:6vw 10vw;
+}
+
+footer main{
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 5vw;
+    height: 4vw;
+    min-height: 20px;
+    min-width: 20px;
+    margin:0 2vw;
+}
+
+footer span{
+    margin-right: 1vw;
+    color: var(--secondary-color);
+}
+
+footer i{
+    margin-right: 2vw;
+}
+
+footer p{
+    width: 80%;
+}
+
+footer hr{
+    width: 100%;
+}
+
+
+.cost div{
+    border:1px solid rgb(238, 227, 227);
+    border-radius: 8px;
+    gap: 1vw;
+    padding:15px;
+    justify-content:space-between;
+}
+
+.cost img{
+    width: 20vh;
+    height: 20vh;
+    min-height: 40px;
+    min-width: 40px;
+}
+
+.cost .sign{
+    background-color: blue;
+}
+
+.cost .reg{
+    background-color:white;
+    color:blue;
+}
+
+.cost h5{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+
 
 
 
@@ -345,7 +512,7 @@ nav ul li:hover{
         margin:1% 0;
     }
 
-    .banner form,.popular,.place{
+    .banner form,.popular,.place,.news{
         flex-direction: column;
     }
 
@@ -387,6 +554,16 @@ nav ul li:hover{
         width:70%;
         bottom:30vh;
         left:12vw;
+    }
+
+   
+    .news article:nth-child(1){
+        height:auto;
+        width:calc(100% - 4vw);
+    }
+    
+    .news article:nth-child(2){
+        width:calc(100%);
     }
 
 }
