@@ -227,6 +227,11 @@ nav ul li:hover{
     background-color: aliceblue;
 }
 
+.choose img{
+    height: 60px;
+    width: 60px;
+}
+
 
 .deals>article>section{
     border-radius: 2px;
